@@ -1,3 +1,4 @@
+# --- Procesamiento de Datos y ML ---
 numpy==1.26.4
 pandas==2.2.1
 matplotlib==3.8.3
@@ -5,4 +6,17 @@ seaborn==0.13.2
 scikit-learn==1.4.1.post1
 shap==0.45.0
 pyspark==3.5.1
+
+# --- Tracking y Optimización ---
 mlflow==2.11.3
+optuna==3.6.1
+
+# --- API (Backend) ---
+fastapi==0.110.0
+uvicorn==0.29.0
+pydantic==2.6.4
+python-multipart==0.0.9  # NECESARIO para subir archivos CSV a la API
+
+# --- Interfaz (Frontend) ---
+streamlit==1.32.2        # NECESARIO para correr interface_burnout.py
+requests==2.31.0         # NECESARIO para que Streamlit se comunique con la API
